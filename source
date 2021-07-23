@@ -1,1 +1,225 @@
-print("Made By way- 0001")
+pring("Hello Welcome To way-#0001's Script Hub!") 
+
+
+local ScreenGui = Instance.new("ScreenGui")
+local mainframe = Instance.new("Frame")
+local Credits = Instance.new("TextLabel")
+local Racemodex = Instance.new("TextButton")
+local DaHub = Instance.new("TextButton")
+local Swagmode = Instance.new("TextButton")
+local NovaGui = Instance.new("TextButton")
+local Legacyx = Instance.new("TextButton")
+local AntiAfk = Instance.new("TextButton")
+local Crystal = Instance.new("TextButton")
+local Faded = Instance.new("TextButton")
+local ComingSOon = Instance.new("TextLabel")
+local Crash = Instance.new("TextButton")
+local Zordion = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+mainframe.Name = "mainframe"
+mainframe.Parent = ScreenGui
+mainframe.BackgroundColor3 = Color3.fromRGB(63, 121, 105)
+mainframe.Position = UDim2.new(0.121824637, 0, 0.34359628, 0)
+mainframe.Size = UDim2.new(0, 458, 0, 370)
+mainframe.Active = true
+mainframe.Draggable = true
+
+Credits.Name = "Credits"
+Credits.Parent = mainframe
+Credits.BackgroundColor3 = Color3.fromRGB(135, 255, 191)
+Credits.Size = UDim2.new(0, 458, 0, 50)
+Credits.Font = Enum.Font.SourceSans
+Credits.Text = "Da Hood Script Hub | By way- 0001"
+Credits.TextColor3 = Color3.fromRGB(0, 0, 0)
+Credits.TextSize = 14.000
+
+Racemodex.Name = "Racemodex"
+Racemodex.Parent = mainframe
+Racemodex.BackgroundColor3 = Color3.fromRGB(204, 102, 255)
+Racemodex.Position = UDim2.new(0.00218330789, 0, 0.405405402, 0)
+Racemodex.Size = UDim2.new(0, 245, 0, 50)
+Racemodex.Font = Enum.Font.SourceSans
+Racemodex.Text = "Racemodex"
+Racemodex.TextColor3 = Color3.fromRGB(0, 0, 0)
+Racemodex.TextSize = 14.000
+Racemodex.MouseButton1Down:connect(function()
+	loadstring(game:GetObjects("rbxassetid://5812737894")[1].Source)()
+end)
+
+DaHub.Name = "DaHub"
+DaHub.Parent = mainframe
+DaHub.BackgroundColor3 = Color3.fromRGB(28, 255, 168)
+DaHub.Position = UDim2.new(0.537117898, 0, 0.405405253, 0)
+DaHub.Size = UDim2.new(0, 212, 0, 50)
+DaHub.Font = Enum.Font.SourceSans
+DaHub.Text = "DaHub"
+DaHub.TextColor3 = Color3.fromRGB(0, 0, 0)
+DaHub.TextSize = 14.000
+DaHub.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/DaHoodScripts/NoUScripts/main/DaHub"))()  
+end)
+
+
+Swagmode.Name = "Swagmode"
+Swagmode.Parent = mainframe
+Swagmode.BackgroundColor3 = Color3.fromRGB(75, 30, 255)
+Swagmode.Position = UDim2.new(0.00218342245, 0, 0.540540576, 0)
+Swagmode.Size = UDim2.new(0, 245, 0, 50)
+Swagmode.Font = Enum.Font.SourceSans
+Swagmode.Text = "Swagmode"
+Swagmode.TextColor3 = Color3.fromRGB(0, 0, 0)
+Swagmode.TextSize = 14.000
+Swagmode.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/lerkermer/lua-projects/master/SwagModeV002"))()
+end)
+
+NovaGui.Name = "NovaGui"
+NovaGui.Parent = mainframe
+NovaGui.BackgroundColor3 = Color3.fromRGB(181, 152, 255)
+NovaGui.Position = UDim2.new(0.53493464, 0, 0.540540516, 0)
+NovaGui.Size = UDim2.new(0, 212, 0, 50)
+NovaGui.Font = Enum.Font.SourceSans
+NovaGui.Text = "NovaGui"
+NovaGui.TextColor3 = Color3.fromRGB(0, 0, 0)
+NovaGui.TextSize = 14.000
+NovaGui.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/IcxyLol/Nova-Gui-New/main/README.md", true))()
+
+end)
+
+Legacyx.Name = "Legacyx"
+Legacyx.Parent = mainframe
+Legacyx.BackgroundColor3 = Color3.fromRGB(255, 0, 110)
+Legacyx.Position = UDim2.new(0.00218340615, 0, 0.270270228, 0)
+Legacyx.Size = UDim2.new(0, 238, 0, 50)
+Legacyx.Font = Enum.Font.SourceSans
+Legacyx.Text = "Legacyx"
+Legacyx.TextColor3 = Color3.fromRGB(0, 0, 0)
+Legacyx.TextSize = 14.000
+Legacyx.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/Legacy-Foundation/Legacy-Hub/main/.lua'))();
+end)
+
+AntiAfk.Name = "AntiAfk"
+AntiAfk.Parent = mainframe
+AntiAfk.BackgroundColor3 = Color3.fromRGB(255, 177, 21)
+AntiAfk.Position = UDim2.new(0.519650698, 0, 0.135135114, 0)
+AntiAfk.Size = UDim2.new(0, 220, 0, 50)
+AntiAfk.Font = Enum.Font.SourceSans
+AntiAfk.Text = "AntiAfk"
+AntiAfk.TextColor3 = Color3.fromRGB(0, 0, 0)
+AntiAfk.TextSize = 14.000
+AntiAfk.MouseButton1Down:connect(function()
+	wait(0.5)local ba=Instance.new("ScreenGui")
+	local ca=Instance.new("TextLabel")local da=Instance.new("Frame")
+	local _b=Instance.new("TextLabel")local ab=Instance.new("TextLabel")ba.Parent=game.CoreGui
+	ba.ZIndexBehavior=Enum.ZIndexBehavior.Sibling;ca.Parent=ba;ca.Active=true
+	ca.BackgroundColor3=Color3.new(0.176471,0.176471,0.176471)ca.Draggable=true
+	ca.Position=UDim2.new(0.698610067,0,0.098096624,0)ca.Size=UDim2.new(0,370,0,52)
+	ca.Font=Enum.Font.SourceSansSemibold;ca.Text="Anti Afk"ca.TextColor3=Color3.new(0,1,1)
+	ca.TextSize=22;da.Parent=ca
+	da.BackgroundColor3=Color3.new(0.196078,0.196078,0.196078)da.Position=UDim2.new(0,0,1.0192306,0)
+	da.Size=UDim2.new(0,370,0,107)_b.Parent=da
+	_b.BackgroundColor3=Color3.new(0.176471,0.176471,0.176471)_b.Position=UDim2.new(0,0,0.800455689,0)
+	_b.Size=UDim2.new(0,370,0,21)_b.Font=Enum.Font.Arial;_b.Text="Made by Headshot#5868"
+	_b.TextColor3=Color3.new(0,1,1)_b.TextSize=20;ab.Parent=da
+	ab.BackgroundColor3=Color3.new(0.176471,0.176471,0.176471)ab.Position=UDim2.new(0,0,0.158377,0)
+	ab.Size=UDim2.new(0,370,0,44)ab.Font=Enum.Font.ArialBold;ab.Text="Status: Active"
+	ab.TextColor3=Color3.new(0,1,1)ab.TextSize=20;local bb=game:service'VirtualUser'
+	game:service'Players'.LocalPlayer.Idled:connect(function()
+		bb:CaptureController()bb:ClickButton2(Vector2.new())
+		ab.Text="Roblox kicked you but we didnt let them!"wait(2)ab.Text="Status : Active"end)
+end)
+
+
+Crystal.Name = "Crystal "
+Crystal.Parent = mainframe
+Crystal.BackgroundColor3 = Color3.fromRGB(14, 98, 255)
+Crystal.Position = UDim2.new(0.00218340661, 0, 0.135135174, 0)
+Crystal.Size = UDim2.new(0, 238, 0, 50)
+Crystal.Font = Enum.Font.SourceSans
+Crystal.Text = "Crystal Central"
+Crystal.TextColor3 = Color3.fromRGB(0, 0, 0)
+Crystal.TextSize = 14.000
+Crystal.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/CrystalManMan/crystacentral/main/3jnfnfuiNOOB.", true))()
+end)
+
+Faded.Name = "Faded"
+Faded.Parent = mainframe
+Faded.BackgroundColor3 = Color3.fromRGB(255, 96, 242)
+Faded.Position = UDim2.new(0.519650698, 0, 0.270270348, 0)
+Faded.Size = UDim2.new(0, 220, 0, 50)
+Faded.Font = Enum.Font.SourceSans
+Faded.Text = "Faded"
+Faded.TextColor3 = Color3.fromRGB(0, 0, 0)
+Faded.TextSize = 14.000
+Faded.MouseButton1Down:connect(function()
+	-- / / V to open and close
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/NighterEpic/Faded/main/YesEpic", true))()
+end)
+
+ComingSOon.Name = "Coming SOon"
+ComingSOon.Parent = mainframe
+ComingSOon.BackgroundColor3 = Color3.fromRGB(219, 35, 255)
+ComingSOon.Position = UDim2.new(-0.00218320615, 0, 0.810810804, 0)
+ComingSOon.Size = UDim2.new(0, 458, 0, 70)
+ComingSOon.Font = Enum.Font.SourceSans
+ComingSOon.Text = "MORE COMING SOON"
+ComingSOon.TextColor3 = Color3.fromRGB(0, 0, 0)
+ComingSOon.TextSize = 45.000
+
+Crash.Name = "Crash"
+Crash.Parent = mainframe
+Crash.BackgroundColor3 = Color3.fromRGB(252, 255, 53)
+Crash.Position = UDim2.new(0, 0, 0.67567569, 0)
+Crash.Size = UDim2.new(0, 246, 0, 50)
+Crash.Font = Enum.Font.SourceSans
+Crash.Text = "Crash"
+Crash.TextColor3 = Color3.fromRGB(0, 0, 0)
+Crash.TextSize = 14.000
+Crash.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/racemodex/my-scripts/master/dahoodcrash", true))()
+end)
+
+Zordion.Name = "Zordion"
+Zordion.Parent = mainframe
+Zordion.BackgroundColor3 = Color3.fromRGB(255, 85, 0)
+Zordion.Position = UDim2.new(0.521834075, 0, 0.67567569, 0)
+Zordion.Size = UDim2.new(0, 219, 0, 50)
+Zordion.Font = Enum.Font.SourceSans
+Zordion.Text = "Zordion"
+Zordion.TextColor3 = Color3.fromRGB(0, 0, 0)
+Zordion.TextSize = 14.000
+Zordion.MouseButton1Down:connect(function()
+	repeat
+		wait()
+	until game:IsLoaded()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/0nly6Ex/zordion/main/script.lua"))()
+end)
+
+-- Scripts:
+
+local function DJSEMFF_fake_script() -- mainframe.LocalScript 
+	local script = Instance.new('LocalScript', mainframe)
+
+	local Plr = game.Players.LocalPlayer
+
+	Plr:GetMouse().KeyDown:Connect(function(K)
+		if K == "]" then
+			script.Parent.Visible = true
+		end
+	end)
+	local Plr = game.Players.LocalPlayer
+
+	Plr:GetMouse().KeyDown:Connect(function(K)
+		if K == "[" then
+			script.Parent.Visible = false
+		end
+	end)
+end
+coroutine.wrap(DJSEMFF_fake_script)()

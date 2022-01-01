@@ -1,2 +1,2 @@
-local key = "nuffer"
+local key = {"nuffer"}
 return key

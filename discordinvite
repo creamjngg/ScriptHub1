@@ -1,3 +1,1 @@
- local Inv, ServerInfo, ServerName = {'j', 'W', 'E', 'q', 'n', 'W', 'Z', 's', 'G', '7'}, nil, ''
- 
- return Inv, ServerInfo, ServerName
+{'j', 'W', 'E', 'q', 'n', 'W', 'Z', 's', 'G', '7'}, nil, ''

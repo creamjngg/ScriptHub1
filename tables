@@ -11,10 +11,4 @@ local PREMIUM = {
 116861986
 }
 
-local MODS = {
-1145324307,
-436554822
-}
-
-return MODS
 return PREMIUM

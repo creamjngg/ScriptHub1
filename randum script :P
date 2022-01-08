@@ -1,5 +1,5 @@
 repeat wait() until game:IsLoaded()
-
+wait(1)
 if not game:GetService("Workspace").Terrain["_Game"].Admin.Pads:FindFirstChild(game.Players.LocalPlayer.Name .. "'s admin") then
 	if game:GetService("Workspace").Terrain["_Game"].Admin.Pads:FindFirstChild("Touch to get admin") then
 		local pad = game:GetService("Workspace").Terrain["_Game"].Admin.Pads:FindFirstChild("Touch to get admin"):FindFirstChild("Head")
@@ -34,8 +34,8 @@ end
 for i, v in pairs(game.Players:GetChildren()) do
 	if v.Name == game.Players.LocalPlayer.Name then
 	else
+	for i=1, 5 do
 		game.Players:Chat("respawn "..v.Name)
-		for i=1, 5 do
 			pcall(punish, v.Name)
 		end
 		pcall(start, v.Name)

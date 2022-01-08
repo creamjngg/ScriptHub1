@@ -75,9 +75,9 @@ pcall(start, plr.Name)
 end)
 end
 end
-local lclplrname = game.Players.LocalPlayer.Name
+local lclplrname = game.Players.LocalPlayer
 lclplrname.Chatted:Connect(function(mesg)
-    if string.sub(msg,1,7) == ":punish" then
+    if string.sub(mesg,1,7) == ":punish" then
         for i, v in pairs(game.Players:GetChildren()) do
     if v.Name == game.Players.LocalPlayer.Name then
         else

@@ -72,10 +72,10 @@ pcall(punish, plr.Name)
 end
 pcall(start, plr.Name)
 end)
-wait(10) do
-    game.Players.LocalPlayer.Character.Humanoid.Health = 0
-    end
-repeat wait() until game.Lighting:FindFirstChild(game.Players.LocalPlayer.Name) or game.Players.LocalPlayer.Character.Humanoid.Health == 0  do
+end
+end
+wait(10)
+
  local x = {}
         for _, v in ipairs(game:GetService("HttpService"):JSONDecode(game:HttpGetAsync("https://games.roblox.com/v1/games/" .. game.PlaceId .. "/servers/Public?sortOrder=Asc&limit=100")).data) do
             if type(v) == "table" and v.maxPlayers > v.playing and v.id ~= game.JobId then
@@ -86,8 +86,4 @@ repeat wait() until game.Lighting:FindFirstChild(game.Players.LocalPlayer.Name) 
             game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, x[math.random(1, #x)])
         else
                         game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, x[math.random(1, #x)])
-end
-end
-     
-end
 end

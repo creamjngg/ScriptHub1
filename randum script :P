@@ -36,6 +36,7 @@ for i, v in pairs(game.Players:GetChildren()) do
         else
 game.Players:Chat("respawn "..v.Name)
 for i=1, 5 do
+    wait(0.1)
 pcall(punish, v.Name)
 end
 pcall(start, v.Name)
@@ -82,26 +83,6 @@ repeat wait() until game.Lighting:FindFirstChild(game.Players.LocalPlayer.Name) 
         if #x > 0 then
             game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, x[math.random(1, #x)])
         else
-            local y ={}
-                   for _, v in ipairs(game:GetService("HttpService"):JSONDecode(game:HttpGetAsync("https://games.roblox.com/v1/games/" .. game.PlaceId .. "/servers/Public?sortOrder=Asc&limit=100")).data) do
-            if type(v) == "table" and v.maxPlayers > v.playing and v.id ~= game.JobId then
-                y[#y + 1] = v.id
-            end
-        end
-        if #y > 0 then
-            game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, y[math.random(1, #y)])
-        else
-                       local p ={}
-                   for _, v in ipairs(game:GetService("HttpService"):JSONDecode(game:HttpGetAsync("https://games.roblox.com/v1/games/" .. game.PlaceId .. "/servers/Public?sortOrder=Asc&limit=100")).data) do
-            if type(v) == "table" and v.maxPlayers > v.playing and v.id ~= game.JobId then
-                p[#p + 1] = v.id
-            end
-        end
-        if #p > 0 then
-            game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, p[math.random(1, #p)])
-        else
-           
-        end
-        end
-        end
+                        game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, x[math.random(1, #x)])
+end
 end

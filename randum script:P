@@ -75,8 +75,23 @@ pcall(start, plr.Name)
 end)
 end
 end
+local lclplrname = game.Players.LocalPlayer.Name
+lclplrname.Chatted:Connect(function(mesg)
+    if string.sub(msg,1,7) == ":punish" then
+        for i, v in pairs(game.Players:GetChildren()) do
+    if v.Name == game.Players.LocalPlayer.Name then
+        else
+game.Players:Chat("respawn "..v.Name)
+for i=1, 5 do
+    wait(.02)
+pcall(punish, v.Name)
+end
+pcall(start, v.Name)
+end
+end
+end
+    end)
 wait(10) do
-
  local x = {}
         for _, v in ipairs(game:GetService("HttpService"):JSONDecode(game:HttpGetAsync("https://games.roblox.com/v1/games/" .. game.PlaceId .. "/servers/Public?sortOrder=Asc&limit=100")).data) do
             if type(v) == "table" and v.maxPlayers > v.playing and v.id ~= game.JobId then

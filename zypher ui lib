@@ -4,6 +4,11 @@ if game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"):FindFirstChi
 game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"):FindFirstChild(ZypherName):Destroy()
 end
 function library:Window(lib)
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
 local ZypherUILib = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local Shadows = Instance.new("Folder")
@@ -13,10 +18,15 @@ local nigger_3 = Instance.new("ImageLabel")
 local TextLabel = Instance.new("TextLabel")
 local TextLabel_2 = Instance.new("TextLabel")
 local TextButton = Instance.new("TextButton")
+local TabFrame = Instance.new("Frame")
+local TextLabel_3 = Instance.new("TextLabel")
+local TabButtonss = Instance.new("Frame")
+local UIListLayout = Instance.new("UIListLayout")
+local Tabs = Instance.new("Frame")
 
 --Properties:
 
-ZypherUILib.Name = ZypherName
+ZypherUILib.Name = "ZypherUILib"
 ZypherUILib.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 ZypherUILib.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
@@ -25,7 +35,7 @@ Frame.AnchorPoint = Vector2.new(0.5, 0.5)
 Frame.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
 Frame.BorderColor3 = Color3.fromRGB(20, 20, 20)
 Frame.ClipsDescendants = true
-Frame.Position = UDim2.new(0.517686069, 0, 0.507151365, 0)
+Frame.Position = UDim2.new(0.521370649, 0, 0.510727048, 0)
 Frame.Size = UDim2.new(0, 625, 0, 387)
 
 Shadows.Name = "Shadows"
@@ -76,10 +86,10 @@ nigger_3.SliceCenter = Rect.new(10, 10, 118, 118)
 TextLabel.Parent = Frame
 TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.BackgroundTransparency = 1.000
-TextLabel.Position = UDim2.new(-0.0623999983, 0, -0.0280000009, 0)
-TextLabel.Size = UDim2.new(0, 142, 0, 50)
+TextLabel.Position = UDim2.new(-0.0623999983, 0, -0.0279999971, 0)
+TextLabel.Size = UDim2.new(0, 222, 0, 50)
 TextLabel.Font = Enum.Font.SourceSansBold
-TextLabel.Text = lib
+TextLabel.Text = "Zypher"
 TextLabel.TextColor3 = Color3.fromRGB(230, 230, 230)
 TextLabel.TextSize = 20.000
 
@@ -88,6 +98,7 @@ TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_2.BackgroundTransparency = 1.000
 TextLabel_2.Position = UDim2.new(0.814400017, 0, -0.0284237713, 0)
 TextLabel_2.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_2.ZIndex = 5
 TextLabel_2.Font = Enum.Font.SourceSans
 TextLabel_2.Text = "X"
 TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -102,9 +113,48 @@ TextButton.Font = Enum.Font.SourceSans
 TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton.TextSize = 14.000
 
+TabFrame.Name = "TabFrame"
+TabFrame.Parent = Frame
+TabFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TabFrame.BackgroundTransparency = 1.000
+TabFrame.ClipsDescendants = true
+TabFrame.Position = UDim2.new(0, 0, 0.100775197, 0)
+TabFrame.Size = UDim2.new(0, 148, 0, 348)
+
+TextLabel_3.Parent = TabFrame
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Position = UDim2.new(-0.16997838, 0, -0.0239344873, 0)
+TextLabel_3.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_3.Font = Enum.Font.SourceSans
+TextLabel_3.Text = "Tabs"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextSize = 25.000
+TextLabel_3.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+TabButtonss.Name = "TabButtonss"
+TabButtonss.Parent = TabFrame
+TabButtonss.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TabButtonss.BackgroundTransparency = 1.000
+TabButtonss.ClipsDescendants = true
+TabButtonss.Position = UDim2.new(0, 0, 0.119743697, 0)
+TabButtonss.Size = UDim2.new(0, 148, 0, 306)
+
+UIListLayout.Parent = TabButtonss
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout.Padding = UDim.new(0, 3)
+
+Tabs.Name = "Tabs"
+Tabs.Parent = Frame
+Tabs.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Tabs.BackgroundTransparency = 1.000
+Tabs.ClipsDescendants = true
+Tabs.Position = UDim2.new(0.2368, 0, 0, 0)
+Tabs.Size = UDim2.new(0, 477, 0, 387)
+
 -- Scripts:
 
-local function VPWFR_fake_script() -- Frame.LocalScript 
+local function UUCUA_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	local UIS = game:GetService("UserInputService")
@@ -145,30 +195,46 @@ local function VPWFR_fake_script() -- Frame.LocalScript
 	
 	dragify(script.Parent)
 end
-coroutine.wrap(VPWFR_fake_script)()
-local function BBMIVNH_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(UUCUA_fake_script)()
+local function XTZNBK_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent.Parent:Destroy()
 	end)
 end
-coroutine.wrap(BBMIVNH_fake_script)()
+coroutine.wrap(XTZNBK_fake_script)()
+
 end
 local ChannelTabs = {}
 function ChannelTabs:Tab(text) 
+
+local TextButton = Instance.new("TextButton")
+
+
+TextButton.Parent = game.StarterGui:FindFirstChild(ZypherName).Frame.TabFrame.TabButtonss
+TextButton.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+TextButton.BorderColor3 = Color3.fromRGB(20, 20, 20)
+TextButton.Position = UDim2.new(0, 0, -0.000796914101, 0)
+TextButton.Size = UDim2.new(0, 148, 0, 37)
+TextButton.Font = Enum.Font.SourceSansSemibold
+TextButton.Text = "TabButon"
+TextButton.TextColor3 = Color3.fromRGB(200, 200, 200)
+TextButton.TextSize = 14.000
+
 
 local Tab = Instance.new("Frame")
 local UIListLayout = Instance.new("UIListLayout")
 local TextLabel = Instance.new("TextLabel")
 
+--Properties:
 
-Tab.Name = "Tab"
-Tab.Parent = game.StarterGui.ZypherUILib.Frame
+Tab.Name = text.."Tab"
+Tab.Parent = game.StarterGui.ZypherUILib.Frame.Tabs
 Tab.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
 Tab.BorderColor3 = Color3.fromRGB(15, 15, 15)
 Tab.ClipsDescendants = true
-Tab.Position = UDim2.new(0.2368, 0, 0, 0)
+Tab.Position = UDim2.new(-0.000987410545, 0, 0, 0)
 Tab.Size = UDim2.new(0, 477, 0, 387)
 
 UIListLayout.Parent = Tab

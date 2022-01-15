@@ -1,6 +1,8 @@
 local library = {}
 local ZypherName = "ZypherUiLib"
+if game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"):FindFirstChild(ZypherName) then
 game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"):FindFirstChild(ZypherName):Destroy()
+end
 function library:Window(lib)
 local ZypherUILib = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")

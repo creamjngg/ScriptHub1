@@ -1,7 +1,7 @@
-local zypherlib = {}
+local library = {}
 local ZypherName = "ZypherUiLib"
 game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"):FindFirstChild(ZypherName):Destroy()
-function zypherlib:Window(lib)
+function library:Window(lib)
 local ZypherUILib = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local Shadows = Instance.new("Folder")
@@ -152,16 +152,14 @@ local function BBMIVNH_fake_script() -- TextButton.LocalScript
 	end)
 end
 coroutine.wrap(BBMIVNH_fake_script)()
-
 end
-local tabs = {}
-function tabs:Tab(text) 
+local ChannelTabs = {}
+function ChannelTabs:Tab(text) 
 local Tab = Instance.new("Frame")
 local UIListLayout = Instance.new("UIListLayout")
 local TextLabel = Instance.new("TextLabel")
 local TextButton = Instance.new("TextButton")
 
---Properties:
 
 Tab.Name = "Tab"
 Tab.Parent = game.StarterGui:FindFirstChild(ZypherName).Frame
@@ -186,5 +184,4 @@ TextLabel.TextColor3 = Color3.fromRGB(200, 200, 200)
 TextLabel.TextSize = 25.000
 TextLabel.Text = text
 end
-return tabs
-return zypherlib
+return library, ChannelTabs

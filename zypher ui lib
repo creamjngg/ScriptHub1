@@ -28,7 +28,7 @@ local Tabs = Instance.new("Frame")
 
 --Properties:
 
-ZypherUILib.Name = "ZypherUILib"
+ZypherUILib.Name = ZypherName
 ZypherUILib.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 ZypherUILib.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 

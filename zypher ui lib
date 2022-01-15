@@ -1,6 +1,6 @@
 local zypherlib = {}
 local ZypherName = "ZypherUiLib"
-for i, v in pairs(game:GetService("Player").LocalPlayer:WaitForChild("PlayerGui"):GetChildren()) do
+for i, v in pairs(game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"):GetChildren()) do
 if v.Name == ZypherName then
 v:Destroy()
 end

@@ -154,8 +154,8 @@ end
 coroutine.wrap(BBMIVNH_fake_script)()
 
 end
-local buttons {}
-function buttons:Tab(text) 
+local tabs {}
+function tabs:Tab(text) 
 local Tab = Instance.new("Frame")
 local UIListLayout = Instance.new("UIListLayout")
 local TextLabel = Instance.new("TextLabel")
@@ -186,5 +186,5 @@ TextLabel.TextColor3 = Color3.fromRGB(200, 200, 200)
 TextLabel.TextSize = 25.000
 TextLabel.Text = text
 end
-
+return tabs
 return zypherlib

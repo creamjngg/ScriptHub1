@@ -154,7 +154,7 @@ end
 coroutine.wrap(BBMIVNH_fake_script)()
 
 end
-local tabs {}
+local tabs = {}
 function tabs:Tab(text) 
 local Tab = Instance.new("Frame")
 local UIListLayout = Instance.new("UIListLayout")

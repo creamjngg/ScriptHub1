@@ -1,11 +1,11 @@
-local library = {}
+local zypherlib = {}
 local ZypherName = "ZypherUiLib"
 for i, v in pairs(game:GetService("Player").LocalPlayer:WaitForChild("PlayerGui"):GetChildren()) do
 if v.Name == ZypherName then
 v:Destroy()
 end
 end
-function library:Window(lib)
+function zypherlib:Window(lib)
 local ZypherUILib = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local Shadows = Instance.new("Folder")
@@ -159,4 +159,4 @@ coroutine.wrap(BBMIVNH_fake_script)()
 
 end
 
-return library
+return zypherlib

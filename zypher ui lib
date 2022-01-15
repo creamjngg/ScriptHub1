@@ -1,10 +1,6 @@
 local zypherlib = {}
 local ZypherName = "ZypherUiLib"
-for i, v in pairs(game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"):GetChildren()) do
-if v.Name == ZypherName then
-v:Destroy()
-end
-end
+game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui")
 function zypherlib:Window(lib)
 local ZypherUILib = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
@@ -157,6 +153,38 @@ local function BBMIVNH_fake_script() -- TextButton.LocalScript
 end
 coroutine.wrap(BBMIVNH_fake_script)()
 
+end
+local buttons {}
+function buttons:Tab(text) 
+local Tab = Instance.new("Frame")
+local UIListLayout = Instance.new("UIListLayout")
+local TextLabel = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+
+--Properties:
+
+Tab.Name = "Tab"
+Tab.Parent = game.StarterGui:FindFirstChild(ZypherName).Frame
+Tab.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+Tab.BorderColor3 = Color3.fromRGB(15, 15, 15)
+Tab.ClipsDescendants = true
+Tab.Position = UDim2.new(0.2368, 0, 0, 0)
+Tab.Size = UDim2.new(0, 477, 0, 387)
+
+UIListLayout.Parent = Tab
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout.Padding = UDim.new(0, 3)
+
+TextLabel.Parent = Tab
+TextLabel.BackgroundColor3 = Color3.fromRGB(17, 17, 17)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(17, 17, 17)
+TextLabel.ClipsDescendants = true
+TextLabel.Size = UDim2.new(0, 477, 0, 50)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.TextColor3 = Color3.fromRGB(200, 200, 200)
+TextLabel.TextSize = 25.000
+TextLabel.Text = text
 end
 
 return zypherlib

@@ -251,6 +251,7 @@ TextLabel.Font = Enum.Font.SourceSans
 TextLabel.Text = text
 TextLabel.TextColor3 = Color3.fromRGB(200, 200, 200)
 TextLabel.TextSize = 25.000
+return ChannelTabs
 end
 local button = {}
 function button:Button(text, callback)
@@ -270,5 +271,6 @@ TextButton.TextSize = 14.000
 TextButton.MouseButton1Click:Connect(function()
 	pcall(callback)
 end)
+return button
 end
-return library, ChannelTabs, button
+return library

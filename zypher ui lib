@@ -205,4 +205,4 @@ TextButton.MouseButton1Click:Connect(function()
 	pcall(callback)
 end)
 end
-return library, ChannelTabs
+return library, ChannelTabs, button

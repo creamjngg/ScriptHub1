@@ -1,7 +1,9 @@
 local library = {}
 local ZypherName = "ZypherUiLib"
-if game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"):FindFirstChild(ZypherName) then
-game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"):FindFirstChild(ZypherName):Destroy()
+for i,v in pairs(game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"):GetChildren()) do
+if v.Name == ZypherName then
+v:Destroy()
+end
 end
 function library:Window(lib)
 -- Gui to Lua

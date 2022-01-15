@@ -1,5 +1,5 @@
-local libary = {}
-function libary:Window(lib)
+local library = {}
+function library:Window(lib)
 local ZypherUILib = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local Shadows = Instance.new("Folder")

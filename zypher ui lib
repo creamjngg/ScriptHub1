@@ -1,5 +1,5 @@
 local library = {}
-local ZypherName = "ZypherUiLib")
+local ZypherName = "ZypherUiLib"
 for i, v in pairs(game:GetService("Player").LocalPlayer:WaitForChild("PlayerGui"):GetChildren()) do
 if v.Name == ZypherName then
 v:Destroy()

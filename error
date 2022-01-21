@@ -4,6 +4,3 @@ for _,v in next, getconnections(game:GetService("LogService").MessageOut) do
 	for _,v in next, getconnections(game:GetService("ScriptContext").Error) do
 		v:Disable()
 	end
-	hookfunction((gcinfo or collectgarbage), function(...)
-		return math.random(200,350) 
-	end) 

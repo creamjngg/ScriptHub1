@@ -1,5 +1,5 @@
 game:GetService("StarterGui"):SetCore("SendNotification", {
-                Title = "Zypher";
-                Text = "Down till tomorrow SORRY";
+                Title = "";
+                Text = "Down";
                 Duration = 5;
             }) 

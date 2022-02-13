@@ -1,4 +1,4 @@
--- init
+print("drain made zypher >:(")
 local player = game.Players.LocalPlayer
 local mouse = player:GetMouse()
 
@@ -2167,6 +2167,4 @@ do
 		end
 	end
 end
-
-print("dino was here :\)")
 return library

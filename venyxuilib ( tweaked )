@@ -421,7 +421,7 @@ do
 		}, section) 
 	end
 	
-	function library:addPage(...)
+	function library:Tab(...)
 	
 		local page = page.new(self, ...)
 		local button = page.button

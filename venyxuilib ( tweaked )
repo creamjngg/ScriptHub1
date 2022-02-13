@@ -1,5 +1,4 @@
-
-print("zypher made by drain >:(")
+-- init
 local player = game.Players.LocalPlayer
 local mouse = player:GetMouse()
 
@@ -421,7 +420,7 @@ do
 		}, section) 
 	end
 	
-	function library:Tab(...)
+	function library:addPage(...)
 	
 		local page = page.new(self, ...)
 		local button = page.button
@@ -2169,4 +2168,5 @@ do
 	end
 end
 
+print("dino was here :\)")
 return library

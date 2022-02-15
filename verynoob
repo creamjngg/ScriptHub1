@@ -1,6 +1,4 @@
- pcall(function()
-            game.Players.LocalPlayer.Character:FindFirstChild("Head"):FindFirstChild("OriginalSize"):Destroy()
-            for i,plr in pairs(game:GetService('Players'):GetChildren()) do
+ for i,plr in pairs(game:GetService('Players'):GetChildren()) do
                 if game:GetService("Workspace").Players:FindFirstChild(plr)then
                     if plr.Character.Parent.Name == 'Players' then
                         if plr.Character.Head then
@@ -11,4 +9,3 @@
                 end
             end
     end
-        end)

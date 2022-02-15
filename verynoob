@@ -3,7 +3,7 @@
                     if plr.Character.Parent.Name == 'Players' then
                         if plr.Character.Head then
                     if not plr.Character.Head:FindFirstChild('OriginalSize') then
-                        plr.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = (💖]' .. plr.DisplayName)
+                        plr.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[💖]' .. plr.DisplayName)
                     end
                 end
                 end

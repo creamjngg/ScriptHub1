@@ -1,11 +1,11 @@
- for i,plr in pairs(game:GetService('Players'):GetChildren()) do
-                if game:GetService("Workspace").Players:FindFirstChild(plr)then
-                    if plr.Character.Parent.Name == 'Players' then
-                        if plr.Character.Head then
-                    if not plr.Character.Head:FindFirstChild('OriginalSize') then
-                        plr.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[💖]' .. plr.DisplayName)
-                    end
-                end
-                end
-            end
-    end
+        pcall(function()
+         for _,plr in pairs(game:GetService('Players'):GetChildren()) do
+             if	plr.Character then
+			if plr.Character.Parent.Name == 'Players' then
+				if not plr.Character.Head:FindFirstChild('OriginalSize') then
+					plr.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[💸]' .. plr.DisplayName)
+				end
+			end
+             end
+         end
+	end)

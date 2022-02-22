@@ -28,24 +28,23 @@ for _,v in pairs(game:GetService('Players'):GetChildren()) do
 			table.find(drain, v.UserId) then
 			if v.Character then
 				if v.Character.Parent.Name == 'Players' then
-					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[DRAIN 🔥]')
+					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[DRAIN 🔥]'..v.DisplayName)
 				end
 			end
 		elseif
 			table.find(friend, v.UserId) then
 			if v.Character then
 				if v.Character.Parent.Name == 'Players' then
-					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[gay men / women]')
+					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[gay men / women]'..v.DisplayName)
 				end
 			end
-		if
-			v.Character then
+		 if	v.Character then
 			if v.Character.Parent.Name == 'Players' then
-				if not v.Character.LeftUpperArm:FindFirstChild('AvatarPartScaleType') then
-					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🐱‍👤]' .. Player.DisplayName)
+				if not v.Character.LeftFood:FindFirstChild('AvatarPartScaleType') then
+					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🐱‍👤]' .. v.DisplayName)
 				end
 			end
-		end
+             end
 	end
 	end
 return premium

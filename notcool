@@ -10,41 +10,22 @@ local premium = {
 local friend = {
 
 }
-for _,v in pairs(game:GetService('Players'):GetChildren()) do
-		if table.find(premium, v.UserId) then
-			if v.Character then
-				if v.Character.Parent.Name == 'Players' then
-					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[⭐]' .. v.DisplayName)
-				end
-			end
-		elseif
-			table.find(booster, v.UserId) then
-			if v.Character then
-				if v.Character.Parent.Name == 'Players' then
-					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🚀]' .. v.DisplayName)
-				end
-			end
-		elseif
-			table.find(drain, v.UserId) then
-			if v.Character then
-				if v.Character.Parent.Name == 'Players' then
-					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[DRAIN 🔥]'..v.DisplayName)
-				end
-			end
-		elseif
-			table.find(friend, v.UserId) then
-			if v.Character then
-				if v.Character.Parent.Name == 'Players' then
-					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[gay men / women]'..v.DisplayName)
-				end
-			end
-		 if	v.Character then
-			if v.Character.Parent.Name == 'Players' then
-				if not v.Character.LeftFoot:FindFirstChild('AvatarPartScaleType') then
-					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🐱‍👤]' .. v.DisplayName)
+ for _,plr in pairs(game:GetService('Players'):GetChildren()) do
+ if table.find(drain,plr.Name) then
+ plr.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[DRAIN🙏]' .. plr.DisplayName)
+ elseif table.find(booster,plr.Name) then
+  plr.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🚀]' .. plr.DisplayName)
+elseif table.find(premium,plr.Name) then
+  plr.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[⭐]' .. plr.DisplayName)
+  elseif table.find(friend,plr.Name) then
+    plr.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[gay (wo)men]' .. plr.DisplayName)
+ end
+             if	plr.Character then
+			if plr.Character.Parent.Name == 'Players' then
+				if not plr.Character.LeftFoot:FindFirstChild('AvatarPartScaleType') then
+					plr.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🤖]' .. plr.DisplayName)
 				end
 			end
              end
-	end
-	end
+         end
 return premium

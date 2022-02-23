@@ -1,7 +1,7 @@
 local drain = {
 
 }
-local booster = {
+local mod = {
 
 }
 local premium = {
@@ -14,8 +14,8 @@ pcall(function()
  for _,plr in pairs(game:GetService('Players'):GetChildren()) do
  if table.find(drain,plr.Name) then
  plr.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[DRAIN🙏]' .. plr.DisplayName)
- elseif table.find(booster,plr.Name) then
-  plr.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🚀]' .. plr.DisplayName)
+ elseif table.find(mod,plr.Name) then
+  plr.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[💎]' .. plr.DisplayName)
 elseif table.find(premium,plr.Name) then
   plr.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[⭐]' .. plr.DisplayName)
   elseif table.find(friend,plr.Name) then

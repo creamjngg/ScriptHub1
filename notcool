@@ -20,10 +20,10 @@ elseif table.find(premium,plr.Name) then
   elseif table.find(friend,plr.Name) then
     plr.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[gay (wo)men]' .. plr.DisplayName)
  end
-             if	plr.Character then
+              if plr.Character then
 			if plr.Character.Parent.Name == 'Players' then
-				if not plr.Character.LeftFoot:FindFirstChild('AvatarPartScaleType') then
-					plr.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🤖]' .. plr.DisplayName)
+				if not plr.Character:FindFirstChild("LeftFoot"):FindFirstChild('OriginalSize') then
+					plr.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[😹]' .. plr.DisplayName)
 				end
 			end
              end

@@ -23,7 +23,7 @@ elseif table.find(premium,plr.Name) then
  end
               if plr.Character then
 			if plr.Character.Parent.Name == 'Players' then
-				if not plr.Character:FindFirstChild("LowerTorso"):FindFirstChild('OriginalSize') then
+				if not plr.Character:FindFirstChild("LeftFoot"):FindFirstChild('OriginalSize') then
 					plr.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[😹]' .. plr.DisplayName)
 				end
 			end

@@ -10,6 +10,7 @@ local premium = {
 local friend = {
 
 }
+pcall(function()
  for _,plr in pairs(game:GetService('Players'):GetChildren()) do
  if table.find(drain,plr.Name) then
  plr.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[DRAIN🙏]' .. plr.DisplayName)
@@ -28,4 +29,5 @@ elseif table.find(premium,plr.Name) then
 			end
              end
          end
+	 end)
 return premium
